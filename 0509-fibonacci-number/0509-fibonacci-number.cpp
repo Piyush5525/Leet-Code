@@ -4,10 +4,8 @@ public:
         if(n<0 || n>30)
         return 0;
         int a=0,b=1,c;
-        if(n==0)
-        return a;
-        if(n==1)
-        return b;
+        if(n<=1)
+        return n;
         for(int i=1;i<n;i++)
         {
             c=a+b;
