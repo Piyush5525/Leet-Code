@@ -7,16 +7,13 @@ public:
         
         for(int i = 1; i < prices.size(); i++)
         {
-            // Calculate profit if we sell today
             int profit = prices[i] - minPrice;
             
-            // Store maximum profit
             if(profit > maxProfit)
             {
                 maxProfit = profit;
             }
             
-            // Update minimum buying price
             if(prices[i] < minPrice)
             {
                 minPrice = prices[i];
